@@ -11,6 +11,7 @@ body {
 /* 汎用クラス */
 h2 {
   font-size: 24px;
+  font-family: "Raleway";
 }
 
 .inner {
@@ -25,6 +26,7 @@ h2 {
   top: 0;
   left: 0;
   background-color: #fff;
+  z-index: 99;
 }
 
 .header_inner {
@@ -107,15 +109,19 @@ main {
 /* アバウトエリア */
 .about_content {
   padding-top: 50px;
+  padding-left: 10%;
   display: flex;
+  justify-content: center;
 }
 
 .about_box {
   text-align: center;
-  padding-left: 10%;
+  padding: 0 5%;
+  margin-left: 5%;
 }
 
 .about_box > h2 {
+  padding-top: 20px;
   padding-bottom: 35px;
   color: #fff;
 }
@@ -143,7 +149,7 @@ main {
   margin-bottom:10px;
 }
 
-.works_main_content img {
+.works_img {
   width: calc(33% - 66px);
   margin-right: 100px;
   margin-bottom: 80px;
@@ -151,17 +157,21 @@ main {
   transition: 0.3s;
 }
 
-.works_main_content img:hover {
+.works_img img {
+  width: 100%;
+}
+
+.works_main_content .works_img:hover {
   opacity: 1;
 }
 
-.works_main_content img:nth-child(3n) {
+.works_main_content .works_img:nth-child(3n) {
   margin-right: 0;
 }
 
 .works_sub_content {
   display: flex;
-  justify-content: center;
+  padding: 0 10%;
 }
 
 .works_sub_content > p {
@@ -183,16 +193,17 @@ main {
 
 .skills_content {
   display: flex;
+  justify-content: center;
 }
 
 .skills_content .skill_box {
-  width: calc(25% - 135px);
+  /* width: calc(25% - 135px); */
   margin-right: 180px;
   margin-bottom: 100px;
 }
 
 .skill_box img {
-  width: 100%;
+  /* width: 100%; */
   margin-bottom: 20px;
 }
 
