@@ -1,0 +1,254 @@
+/* PC用CSS(デフォルト) */
+* {
+  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato";
+}
+
+/* 汎用クラス */
+h2 {
+  font-size: 24px;
+}
+
+.inner {
+  width: 100%;
+  padding: 0 15%;
+}
+
+/* ヘッダー(配置) */
+.header {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.header_inner {
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+}
+
+/* ヘッダー(デザイン) */
+.header_inner i {
+  color: #4e4e4e;
+  font-size: 40px;
+}
+
+.button {
+  color: #fff;
+  font-size: 12px;
+  background-color: #74cfae;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button:hover {
+  color: #333;
+}
+
+.header_inner > .button {
+  margin-left: auto;
+  align-items: center;
+  padding: 14px 12px;
+}
+
+/* メイン */
+/* 背景色 */
+.title_area {
+  background-color: #f2f2f2;
+}
+
+.about_area {
+  background-color: #74cfae;
+}
+
+.works_area {
+  background-color: #f2f2f2;
+}
+
+.skills_area {
+  background-color: #4e4e4e;
+}
+
+.icon_area {
+  background-color: #f2f2f2;
+}
+
+main {
+  margin-top: 70px;
+}
+
+/* 各エリアデザイン */
+/* タイトルエリア */
+.title_content {
+  padding: 250px 0;
+}
+
+.title_content h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+  font-family: "Raleway";
+}
+
+.sub_title {
+  text-align: center;
+  font-size: 30px;
+  color: #c0c0c0;
+}
+
+/* アバウトエリア */
+.about_content {
+  padding-top: 50px;
+  display: flex;
+}
+
+.about_box {
+  text-align: center;
+  padding-left: 10%;
+}
+
+.about_box > h2 {
+  padding-bottom: 35px;
+  color: #fff;
+}
+
+.about_box > p {
+  font-size: 20px;
+  line-height: 1.5em;
+  color: #fff;
+}
+
+/* ワークスエリア */
+.works_area_inner {
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+
+.works_area > h2 {
+  text-align: center;
+  padding-bottom:40px;
+}
+
+.works_main_content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom:10px;
+}
+
+.works_main_content img {
+  width: calc(33% - 66px);
+  margin-right: 100px;
+  margin-bottom: 80px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.works_main_content img:hover {
+  opacity: 1;
+}
+
+.works_main_content img:nth-child(3n) {
+  margin-right: 0;
+}
+
+.works_sub_content {
+  display: flex;
+  justify-content: center;
+}
+
+.works_sub_content > p {
+  text-align: center;
+  width: 70%;
+  margin-right: 90px;
+}
+
+.works_sub_content > .button {
+  padding: 14px 20px;
+}
+
+/* スキルスエリア */
+.skills_area > h2 {
+  padding: 70px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.skills_content {
+  display: flex;
+}
+
+.skills_content .skill_box {
+  width: calc(25% - 135px);
+  margin-right: 180px;
+  margin-bottom: 100px;
+}
+
+.skill_box img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.skills_content .skill_box:last-child {
+  margin-right: 0;
+}
+
+.skill_box figcaption {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* アイコンエリア */
+.icon_content {
+  padding: 200px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 185px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.icon a {
+  padding: 30px 0;
+  display: block; /* 当たり判定拡大 */
+}
+
+.icon a i {
+  color: #74cfae;
+  font-size: 50px;
+}
+
+.icon:hover {
+  background-color: #fff;
+}
+
+/* フッター */
+
+.footer {
+  background-color: #74cfae;
+}
+
+.footer_inner {
+  padding: 20px 0 25px 0;
+  text-align: end;
+  color: #fff;
+}
+
+/* タブレット用CSS */
+/* @media screen and (max-width:1199px) {
+} */
+
+/* スマホ用CSS */
+/* @media screen and (max-width:767px) {
+} */
