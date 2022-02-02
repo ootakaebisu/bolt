@@ -122,7 +122,7 @@ main {
 
 .about_box {
   text-align: center;
-  width:700px;
+  width: 700px;
 }
 
 .about_box > h2 {
@@ -144,32 +144,32 @@ main {
 }
 .works_area_inner > h2 {
   text-align: center;
-  padding-bottom:40px;
+  padding-bottom: 40px;
   font-weight: 300;
 }
 
 .works_main_content {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom:90px;
+  margin-bottom: 90px;
 }
 
-.works_img {
+.works_main_content li {
   margin-right: 100px;
   margin-bottom: 80px;
   opacity: 0.7;
   transition: 0.3s;
 }
 
-.works_img:nth-child(n+4) {
+.works_main_content li:nth-child(n + 4) {
   margin-bottom: 0;
 }
 
-.works_main_content .works_img:hover {
+.works_main_content li:hover {
   opacity: 1;
 }
 
-.works_main_content .works_img:nth-child(3n) {
+.works_main_content li:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -217,7 +217,7 @@ main {
   margin-right: 0;
 }
 
-.skill_box figcaption {
+.skill_box p {
   text-align: center;
   font-size: 16px;
   color: #fff;
