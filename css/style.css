@@ -14,10 +14,6 @@ h2 {
   font-family: "Raleway";
 }
 
-.background_color_width {
-  width: 100%;
-}
-
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -25,6 +21,7 @@ h2 {
 
 /* ヘッダー(配置) */
 .header {
+  width: 100%;
   height: 70px;
   position: fixed;
   top: 0;
@@ -95,7 +92,6 @@ main {
 }
 
 .title_content h1 {
-  margin-bottom: 20px;
   text-align: center;
   font-size: 90px;
   font-weight: 700;
@@ -104,6 +100,7 @@ main {
 }
 
 .sub_title {
+  margin-top: 20px;
   text-align: center;
   font-size: 30px;
   color: #c0c0c0;
@@ -126,12 +123,12 @@ main {
 }
 
 .about_box > h2 {
-  padding-top: 20px;
-  padding-bottom: 35px;
+  margin-top: 20px;
   color: #fff;
 }
 
 .about_box > p {
+  margin-top: 35px;
   font-size: 20px;
   line-height: 1.5em;
   color: #fff;
@@ -144,14 +141,13 @@ main {
 }
 .works_area_inner > h2 {
   text-align: center;
-  padding-bottom: 40px;
   font-weight: 300;
 }
 
 .works_main_content {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 90px;
+  margin-top: 40px;
 }
 
 .works_main_content li {
@@ -176,7 +172,8 @@ main {
 .works_sub_content {
   display: flex;
   align-items: center;
-  padding: 0 10%;
+  justify-content: center;
+  margin-top: 90px;
 }
 
 .works_sub_content > p {
@@ -184,17 +181,20 @@ main {
   font-weight: 300;
   line-height: 1.3em;
   text-align: center;
-  width: 650px;
-  margin-right: 90px;
+  width: 550px;
 }
 
 .works_sub_content > .button {
+  margin-left: 90px;
   padding: 14px 20px;
 }
 
 /* スキルスエリア */
+.skills_area_inner {
+ padding: 70px 0 100px;
+}
+
 .skills_area .inner > h2 {
-  padding: 70px 0;
   color: #fff;
   text-align: center;
 }
@@ -202,15 +202,11 @@ main {
 .skills_content {
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .skills_content .skill_box {
   margin-right: 180px;
-  margin-bottom: 100px;
-}
-
-.skill_box img {
-  margin-bottom: 20px;
 }
 
 .skills_content .skill_box:last-child {
@@ -218,6 +214,7 @@ main {
 }
 
 .skill_box p {
+  margin-top: 20px;
   text-align: center;
   font-size: 16px;
   color: #fff;
