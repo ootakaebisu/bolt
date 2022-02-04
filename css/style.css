@@ -20,23 +20,25 @@ h2 {
 }
 
 /* ヘッダー(配置) */
-.header {
-  width: 100%;
-  height: 70px;
+.header_area {
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #fff;
   z-index: 99;
+  width: 100vw;
 }
 
-.header_inner {
+.header_content {
+  width: 1100px;
+  height: 70px;
   padding: 15px 0;
   display: flex;
+  justify-content: space-between;
 }
 
 /* ヘッダー(デザイン) */
-.header_inner i {
+.header_content i {
   color: #4e4e4e;
   font-size: 40px;
 }
@@ -53,7 +55,7 @@ h2 {
   color: #333;
 }
 
-.header_inner > .button {
+.header_content > .button {
   margin-left: auto;
   align-items: center;
   padding: 14px 12px;
@@ -107,13 +109,14 @@ main {
 }
 
 /* アバウトエリア */
+
 .about_content {
   padding-top: 50px;
   display: flex;
   justify-content: space-between;
 }
 
-.about_content img {
+.about_img {
   margin-left: 100px;
 }
 
@@ -167,6 +170,14 @@ main {
 
 .works_main_content li:nth-child(3n) {
   margin-right: 0;
+}
+
+.works_img {
+  display: block;
+}
+
+.works_img img {
+  vertical-align: bottom;
 }
 
 .works_sub_content {
@@ -260,9 +271,145 @@ main {
 }
 
 /* タブレット用CSS */
-/* @media screen and (max-width:1199px) {
-} */
+@media screen and (max-width:1199px) {
+  /* 共通 */
+  .inner {
+    width:  90%;
+    margin: 0 auto;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ヘッダー */
+  /* タイトルエリア */
+  /* アバウトエリア */
+  .about_content {
+    padding: 50px 0 25px;
+  }
+
+  .about_content .about_img {
+    margin: 0 auto;
+  }
+
+  .about_content img {
+    width: 300px;
+  }
+
+  .about_box {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  /* ワークスエリア */
+  .works_main_content li {
+    margin: 0;
+  }
+
+  .works_main_content li:nth-child(4) {
+    margin-top: 80px;
+  }
+
+  .works_img {
+    text-align: center;
+  }
+
+  .works_sub_content {
+    margin-top: 80px;
+  }
+
+  .works_sub_content .button {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+
+  /* スキルスエリア */
+  .skills_content .skill_box {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .skill_box:nth-child(n+2) {
+    margin-top: 88px;
+  }
+}
 
 /* スマホ用CSS */
-/* @media screen and (max-width:767px) {
-} */
+@media screen and (max-width:767px) {
+  .column_sp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ヘッダー */
+  .header_content .button {
+    display: none;
+  }
+
+  .header_content .menu_area {
+    display: flex;
+    align-items: center;
+    width: 50px;
+  }
+
+  .menu_box {
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu_box span,
+  .menu_box span::before,
+  .menu_box span::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 28px;
+    background-color: #ddd;
+    position: absolute;
+    box-sizing: border-box;
+  }
+
+  .menu_box span::before {
+    bottom: 8px;
+  }
+
+  .menu_box span::after {
+    top: 8px;
+  }
+
+  /* タイトルエリア */
+  .title_content {
+    padding: 160px 0 130px;
+  }
+
+  .title_content h1 {
+    font-size: 80px;
+  }
+
+  .about_box > h2 {
+    font-size: 30px;
+  }
+
+
+  /* ワークスエリア */
+  .works_sub_content > p {
+    width: 100%;
+  }
+
+  /* アイコンエリア */
+  .icon_content {
+    padding: 50px 15px;
+  }
+
+  .icon {
+    width: 100%;
+  }
+}
