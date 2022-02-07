@@ -119,6 +119,11 @@ main {
   margin-left: 100px;
 }
 
+.about_img img {
+  vertical-align: bottom;
+}
+
+
 .about_box {
   text-align: center;
   width: 700px;
@@ -273,7 +278,7 @@ main {
 @media screen and (max-width:1199px) {
   /* 共通 */
   .inner {
-    width:  90%;
+    width:  97%;
     margin: 0 auto;
   }
 
@@ -304,7 +309,7 @@ main {
     text-align: center;
   }
 
-  .works_main_content li:nth-child(4) {
+  .works_main_content li:nth-child(3n+4) {
     margin-top: 80px;
   }
 
